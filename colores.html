@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+    <title>Colores</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+</head> 
+<body>
+    <nav>
+        <div class="navigation">
+            <ul>
+                    <li class="list">
+                        <a href="index.html">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="text">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="css.html">
+                            <span class="icon">
+                                <ion-icon name="logo-css3"></ion-icon>
+                            </span>
+                            <span class="text">CSS</span>
+                        </a>
+                    </li>
+                    <li class="list active">
+                        <a href="colores.html">
+                            <span class="icon">
+                                <ion-icon name="color-fill-outline"></ion-icon>
+                            </span>
+                            <span class="text">Colores</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="bordes.html">
+                            <span class="icon">
+                                <ion-icon name="browsers-outline"></ion-icon>
+                            </span>
+                            <span class="text">Bordes</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="sombreado.html">
+                            <span class="icon">
+                                <ion-icon name="brush-outline"></ion-icon>
+                            </span>
+                            <span class="text">Sombreado</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="opacidad.html">
+                            <span class="icon">
+                                <ion-icon name="contrast-outline"></ion-icon>
+                            </span>
+                            <span class="text">Opacidad</span>
+                        </a>
+                    </li>
+                    <div class="indicador"></div>
+            </ul>
+        </div>
+    </nav>
+    <header>Introduccion a CSS</header>
+    <aside>
+        <img src="https://www.cunprogreso.edu.gt/phocadownloadpap/miniaturas-logotipos/8.png" width="499" height="235">
+        <img src="https://static.wixstatic.com/media/e6c41d_a709379a2e9c4b4c81bb1fc3d1e7e5d0~mv2.png/v1/crop/x_0,y_2,w_914,h_602/fill/w_292,h_190,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/LOGO%20OFICIAL%20EFPEM.png" width="499" height="235">
+    </aside>
+    <section>Como se espesifican los colores en CSS
+        <article style="font-size:medium;">
+            Por nombre: Usando nombres predefinidos de colores. Ejemplo: red, blue, green. <br>
+            Código hexadecimal: Usando el formato #RRGGBB. Ejemplo: #ff0000 para rojo. <br>
+            RGB (Rojo, Verde, Azul): Usando valores entre 0 y 255. Ejemplo: rgb(255, 0, 0) para rojo. <br>
+            RGBA (RGB + Alfa): Similar al RGB, pero con un valor de transparencia. Ejemplo: rgba(255, 0, 0, 0.5). <br>
+            HSL (Tono, Saturación, Luminosidad): Usando el matiz (hue), saturación y luminosidad. Ejemplo: hsl(0, 100%, 50%) para rojo. <br>
+        </article>
+        <article>Ejemplo del uso de colores
+                    <a href="https://www.hubspot.com/hubfs/media/gradientecss.png"><img src="https://www.hubspot.com/hubfs/media/gradientecss.png" height="180" width="180"></a>
+        </article>
+        
+    </section>  
+    <footer> © Creado por 200914598 Douglas Giovanni Pinto Lacán</footer>
+
+    <script>
+        const list = document.querySelectorAll(".list")
+        function active(){
+            list.forEach((item)=> item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item)=> item.addEventListener('click', active));
+    </script>
+</body>
+</html>

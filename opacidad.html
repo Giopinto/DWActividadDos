@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+    <title>Opacidad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+</head> 
+<body>
+    <nav>
+        <div class="navigation">
+            <ul>
+                    <li class="list">
+                        <a href="index.html">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="text">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="css.html">
+                            <span class="icon">
+                                <ion-icon name="logo-css3"></ion-icon>
+                            </span>
+                            <span class="text">CSS</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="colores.html">
+                            <span class="icon">
+                                <ion-icon name="color-fill-outline"></ion-icon>
+                            </span>
+                            <span class="text">Colores</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="bordes.html">
+                            <span class="icon">
+                                <ion-icon name="browsers-outline"></ion-icon>
+                            </span>
+                            <span class="text">Bordes</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="sombreado.html">
+                            <span class="icon">
+                                <ion-icon name="brush-outline"></ion-icon>
+                            </span>
+                            <span class="text">Sombreado</span>
+                        </a>
+                    </li>
+                    <li class="list active">
+                        <a href="opacidad.html">
+                            <span class="icon">
+                                <ion-icon name="contrast-outline"></ion-icon>
+                            </span>
+                            <span class="text">Opacidad</span>
+                        </a>
+                    </li>
+                    <div class="indicador"></div>
+            </ul>
+        </div>
+    </nav>
+    <header>Introduccion a CSS</header>
+    <aside>
+        <img src="https://www.cunprogreso.edu.gt/phocadownloadpap/miniaturas-logotipos/8.png" width="499" height="235">
+        <img src="https://static.wixstatic.com/media/e6c41d_a709379a2e9c4b4c81bb1fc3d1e7e5d0~mv2.png/v1/crop/x_0,y_2,w_914,h_602/fill/w_292,h_190,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/LOGO%20OFICIAL%20EFPEM.png" width="499" height="235">
+    </aside>
+    <section>Opacidad
+        <article style="text-align: left;">
+            background-color: 
+            Especifica el color de fondo de un elemento. <br>
+            background-image: 
+            Define una imagen de fondo para un elemento. <br>
+        </article>
+        <article style="text-align: left;">
+            background-repeat: 
+            Controla si la imagen de fondo se repite o no. <br>
+            repeat: Se repite tanto horizontal como verticalmente. <br>
+            no-repeat: No se repite la imagen. <br>
+            repeat-x: Se repite solo en el eje horizontal. <br>
+            repeat-y: Se repite solo en el eje vertical. <br>
+        </article>
+        <article style="text-align: left;">
+            background-attachment: 
+            Define si la imagen de fondo se desplaza o no. <br>
+            scroll: La imagen se desplaza con el contenido. <br>
+            fixed: La imagen permanece fija cuando se desplaza la página. <br>
+            local: La imagen se desplaza con el contenido del elemento. <br>
+        </article>
+        <article style="text-align: left;">
+            background-position: 
+            Especifica la posición de la imagen de fondo. <br> Se puede usar valores como top, center, bottom, left, right o valores específicos en píxeles o porcentajes.
+        </article>
+    </section>  
+    <footer> © Creado por 200914598 Douglas Giovanni Pinto Lacán</footer>
+
+    <script>
+        const list = document.querySelectorAll(".list")
+        function active(){
+            list.forEach((item)=> item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item)=> item.addEventListener('click', active));
+    </script>
+</body>
+</html>
